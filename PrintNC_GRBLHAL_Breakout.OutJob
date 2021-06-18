@@ -273,7 +273,7 @@ OutputEnabled10_OutputMedium7=0
 OutputDefault10=0
 PageOptions10=Record=PageOptions|CenterHorizontal=True|CenterVertical=True|PrintScale=2.10|XCorrection=1.00|YCorrection=1.00|PrintKind=1|BorderSize=5000000|LeftOffset=0|BottomOffset=0|Orientation=2|PaperLength=1000|PaperWidth=1000|Scale=100|PaperSource=7|PrintQuality=-3|MediaType=1|DitherType=10|PrintScaleMode=1|PaperKind=A4|PaperIndex=9
 Configuration10_Name1=OutputConfigurationParameter1
-Configuration10_Item1=Record=Pcb3DPrintView|ResX=150|ResY=150|ViewX=39370079|ViewY=39370079|LookAtX=31685040|LookAtY=31985040|LookAtZ=0|UpX=0|UpY=1|UpZ=0|FOV=0|QuatX=0|QuatY=0|QuatZ=0|QuatW=1|Zoom=9.22019993914668E-6|UnitsPercent=True|UnitsDPI=True|LockResAspect=True|ViewConfigType=.config_3d|CustomCamera=False|ViewFromTop=False|ScreenWidth=0|ScreenHeight=0|ImageOutputType=1|ViewConfig= |DocumentPath=C:\Repo\grblhal_2000_t4.1_breakout\Layout\PrintNC_GRBLHAL_Breakout.pcbdoc
+Configuration10_Item1=Record=Pcb3DPrintView|ResX=150|ResY=150|ViewX=39370079|ViewY=39370079|LookAtX=31685040|LookAtY=31985040|LookAtZ=0|UpX=0|UpY=1|UpZ=0|FOV=0|QuatX=0|QuatY=0|QuatZ=0|QuatW=1|Zoom=9.22019993914668E-6|UnitsPercent=True|UnitsDPI=True|LockResAspect=True|ViewConfigType=.config_3d|CustomCamera=False|ViewFromTop=False|ScreenWidth=0|ScreenHeight=0|ImageOutputType=1|ViewConfig= |DocumentPath=C:\Repo\grblhal_2000_PrintNC\Layout\PrintNC_GRBLHAL_Breakout.pcbdoc
 OutputType11=PCB 3D Print
 OutputName11=PCB TOP
 OutputCategory11=Documentation
