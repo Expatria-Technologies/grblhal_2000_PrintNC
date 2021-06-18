@@ -92,5 +92,6 @@ Three Pi GPIO pins are further broken out to a header near the spindle sync conn
 
 ### Attributions
 This project uses components from the very helpful actiBMS library for JLCPCB SMT parts.
+
 https://github.com/actiBMS/JLCSMT_LIB
 
