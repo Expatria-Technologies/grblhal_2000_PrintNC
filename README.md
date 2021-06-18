@@ -49,7 +49,9 @@ GRBLHAL2000 has reverse polarity as well as over-current protection beyond 1A.  
 The stepper drivers are designed to be used with IDC connectors that are quick to assemble.  Unfortuantely you will need to ensure that at the external driver the high and low signal pairs are connected correctly as there is no standard pinout on these drivers.  The 8 pin conneciton allows you to run a high and low pair for every signal to ensure the best possible signal integrity.  If desired, L2 and L3 can be swapped so that the steppers can be driven with 12V.
 
 ### RS485 Spindle Control
-This interface is primarily intended to be used with Huayang style VFD for spindle control.  The A and B pins are marked on the bottoms side of the PCB.  Simply connect the appropriate pins to the terminals on the VFD.
+This interface is primarily intended to be used with Huayang style VFD for spindle control.  The A and B pins are marked on the bottoms side of the PCB.  Simply connect the appropriate pins to the terminals on the VFD.  The auto-direction sensing circuit is modified from Bryan Varner's project:
+
+https://github.com/bvarner/pi485
 
 ### 5 Axis limit inputs
 By default both GRBL and the GRBLHAL2000 expect NPN NC limit switches.  PNP switches are not supported, and NO switches require soldering jumper resistors on the PCB (see the schematic for details).
@@ -67,6 +69,8 @@ This port is intended to allow for external pendant type devices to issue real-t
 
 https://github.com/grblHAL/Plugin_I2C_keypad/
 
+https://www.sparkfun.com/qwiic
+
 ### Spindle Sync Port
 This port allows a differential connection to an external module for a robust GRBLHAL lathe implementation.  A reference encoder design is under development.  In addition solder jumper options are present to allow this connector to provide a quadrature encoder signal to the Teensy 4.1 QEI pins for future development.
 
@@ -81,3 +85,8 @@ This is a standard Raspberry PI GPIO header.  The Pi has the ability to drive th
 For communicating with the Teensy, the Pi can act as a standard g-code sender and send data over the connected UART.  The I2C keypad interface is also connected to allow for the potential to develop pi based real-time controls.  Finally, the Pi can assert the user switch controls such as emergency stop.  GRBL auxillary inputs are also routed to the Pi in the event they are unused by the GRBLHAL application.  The Pi can also be used to drive the auxilliar relay outputs.
 
 Three Pi GPIO pins are further broken out to a header near the spindle sync connector.
+
+### Attributions
+This project uses components from the very helpful actiBMS library for JLCPCB SMT parts.
+https://github.com/actiBMS/JLCSMT_LIB
+
