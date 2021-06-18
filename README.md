@@ -54,7 +54,7 @@ By default both GRBL and the GRBLHAL2000 expect NPN NC limit switches.  PNP swit
 Each axis has two limit inputs so that min and max limit switches may be connected in parallel and ganged to a single input pin on the controller.  GRBL always knows the direction of travel so individual min and max pins are not required.  Auto-squaring is supported by enabling ganged axes in GRBLHAL and setting the appropriate pins.  A mapping file for this board will be released soon to make this as easy as possible.
 
 ### User Buttons
-Standard GRBL functions are mapped to 5 three wire button inputs.  This allows you to easily use lighted indicator buttons or inductive sensors for probing or door indication.
+Standard GRBL functions are mapped to 5 three wire button inputs.  This allows you to easily use lighted indicator buttons or powered sensors for probing or door indication.
 
 ### Flood and Mist relay drivers - Auxillary relay drivers
 The relay voltage is selectable between either the 12-24V input voltage, OR the onboard 5V supply. P9 allows you to select the relay voltage.  If you need to drive more than 250 mA through the auxillary and mist/coolant relay outputs, larger external relays are likley required.
