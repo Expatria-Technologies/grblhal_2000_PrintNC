@@ -34,6 +34,8 @@ In addition, the board offers many of the same features found on other 32 bit GR
 ### Teensy 4.1 Module
 The GRBLHAL2000 uses the excellent Teensy4.1 port of GRBLHAL.  Both ethernet and USB-UART solutions can be used for sending g-code.  A UART is also connected to the PI header.
 
+https://github.com/grblHAL/Plugin_networking/
+
 ### Power Input
 The board has a single input for 12-24V.  The board has its own onboard 5V regulator to power the Teensy module as well as a Pi Zero W (recommended) or Pi 3 A+ that is attached to the Pi GPIO header.  There is also a small capacity 12V LDO that is specifically for driving the limit and user switches, as well as optionally providing the base voltage for the 10V spindle output.  When driving the board with less than 14V input, it may not be possible to adjust the spindle output voltage to the full 10V.  In this case we recommend applying 12V to the external spindle supply input directly.
 
@@ -52,6 +54,8 @@ The stepper drivers are designed to be used with IDC connectors that are quick t
 This interface is primarily intended to be used with Huayang style VFD for spindle control.  The A and B pins are marked on the bottoms side of the PCB.  Simply connect the appropriate pins to the terminals on the VFD.  The auto-direction sensing circuit is modified from Bryan Varner's project:
 
 https://github.com/bvarner/pi485
+
+https://github.com/grblHAL/Plugins_spindle/
 
 ### 5 Axis limit inputs
 By default both GRBL and the GRBLHAL2000 expect NPN NC limit switches.  PNP switches are not supported, and NO switches require soldering jumper resistors on the PCB (see the schematic for details).
