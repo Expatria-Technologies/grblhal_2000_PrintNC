@@ -46,7 +46,7 @@ https://www.pjrc.com/teensy/external_power.html
 GRBLHAL2000 has reverse polarity as well as over-current protection beyond 1A.  This is important to consider when using external relays that draw a lot of current as this may overwhelm the capacity of the board.  If you need to drive more than 250 mA through the auxillary and mist/coolant relay outputs, external relays are likley required.
 
 ### Stepper Drivers
-![Stepper drivers](/readme_images/Stepper_Pins.jpg)
+<img src="/readme_images/Stepper_Pins.jpg" width="300">
 
 The stepper drivers are designed to be used with IDC connectors that are quick to assemble.  Unfortuantely you will need to ensure that at the external driver the high and low signal pairs are connected correctly as there is no standard pinout on these drivers.  The 8 pin conneciton allows you to run a high and low pair for every signal to ensure the best possible signal integrity.  If desired, L2 and L3 can be swapped so that the steppers can be driven with 12V.
 
@@ -69,7 +69,9 @@ Standard GRBL functions are mapped to 5 three wire button inputs.  This allows y
 The relay voltage is selectable between either the 12-24V input voltage, OR the onboard 5V supply. P9 allows you to select the relay voltage.  If you need to drive more than 250 mA through the auxillary and mist/coolant relay outputs, larger external relays are likley required.
 
 ### QWIIC/I2C Real-Time Control Port
-![qwiic-logo](/readme_images/qwiic-logo-registered.jpg)
+
+<img src="/readme_images/qwiic-logo-registered.jpg" width="100">
+
 This port is intended to allow for external pendant type devices to issue real-time jogging and override controls to the GRBLHAL controller.  It follows the QWIIC interface from Sparkfun, but adds additional signals for the Keypad interrupt as well as the emergency stop.  We feel that a robust and wired control is the safest way to interact with a CNC machine in real time.  A simple reference controller implementation is under development, but the are example implementations referenced in the GRBLHAL I2C keypad plugin repository:
 
 https://github.com/grblHAL/Plugin_I2C_keypad/
@@ -83,7 +85,7 @@ This port allows a differential connection to an external module for a robust GR
 Four axilliary relay outputs are exposed.  These have a maximum combined drive current of 500 mA.  The relay voltage can be selected via a 3 pin jumper between the external voltage input (12-28V) and the onboard 5V supply.
 
 ### Raspberry PI expansion header
-![Pi Pinout](/readme_images/Pi_Pinout.jpg)
+<img src="/readme_images/Pi_Pinout.jpg" width="500">
 
 This is a standard Raspberry PI GPIO header.  The Pi has the ability to drive the axuilliary outputs, as well as read the status of the real-time control signals.  Three Pi GPIO signals are also brought out to a header on the top side of the board.  The GRBLHAL2000 is capable of powering a Pi Zero W or PI 3 A+ directly, but it cannot supply enough current for a full Pi 3 or Pi4 - when using those you must supply power to the PI externally.
 
