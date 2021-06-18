@@ -69,6 +69,7 @@ Standard GRBL functions are mapped to 5 three wire button inputs.  This allows y
 The relay voltage is selectable between either the 12-24V input voltage, OR the onboard 5V supply. P9 allows you to select the relay voltage.  If you need to drive more than 250 mA through the auxillary and mist/coolant relay outputs, larger external relays are likley required.
 
 ### QWIIC/I2C Real-Time Control Port
+![qwiic-logo](/readme_images/qwiic-logo-registered.jpg)
 This port is intended to allow for external pendant type devices to issue real-time jogging and override controls to the GRBLHAL controller.  It follows the QWIIC interface from Sparkfun, but adds additional signals for the Keypad interrupt as well as the emergency stop.  We feel that a robust and wired control is the safest way to interact with a CNC machine in real time.  A simple reference controller implementation is under development, but the are example implementations referenced in the GRBLHAL I2C keypad plugin repository:
 
 https://github.com/grblHAL/Plugin_I2C_keypad/
