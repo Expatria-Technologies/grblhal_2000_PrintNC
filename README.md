@@ -41,7 +41,7 @@ https://www.pjrc.com/teensy/external_power.html
 GRBLHAL2000 has reverse polarity as well as over-current protection beyond 1A.  This is important to consider when using external relays that draw a lot of current as this may overwhelm the capacity of the board.  If you need to drive more than 250 mA through the auxillary and mist/coolant relay outputs, external relays are likley required.
 
 ### Stepper Drivers
-![Overview Image](/readme_images/Stepper_Pins.jpg)
+![Stepper drivers](/readme_images/Stepper_Pins.jpg)
 
 The stepper drivers are designed to be used with IDC connectors that are quick to assemble.  Unfortuantely you will need to ensure that at the external driver the high and low signal pairs are connected correctly as there is no standard pinout on these drivers.  The 8 pin conneciton allows you to run a high and low pair for every signal to ensure the best possible signal integrity.  If desired, L2 and L3 can be swapped so that the steppers can be driven with 12V.
 
@@ -68,8 +68,7 @@ https://github.com/grblHAL/Plugin_I2C_keypad/
 This port allows a differential connection to an external module for a robust GRBLHAL lathe implementation.  A reference encoder design is under development.  In addition solder jumper options are present to allow this connector to provide a quadrature encoder signal to the Teensy 4.1 QEI pins for future development.
 
 ### Raspberry PI expansion header
-
-![Overview Image](/readme_images/Pi Pinout.jpg)
+![Pi Pinout](/readme_images/Pi_Pinout.jpg)
 
 This is a standard Raspberry PI GPIO header.  The Pi has the ability to drive the axuilliary outputs, as well as read the status of the real-time control signals.  Three Pi GPIO signals are also brought out to a header on the top side of the board.  The GRBLHAL2000 is capable of powering a Pi Zero W or PI 3 A+ directly, but it cannot supply enough current for a full Pi 3 or Pi4 - when using those you must supply power to the PI externally.
 
