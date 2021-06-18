@@ -6,7 +6,7 @@ Expatria Technologies GRBLHAL Breakout board for PrintNC
 
 grblHAL is a no-compromise, high performance, low cost alternative to parallel-port-based motion control for CNC milling, and the GRBLHAL2000 breakout board is a highly integrated, no compromise host platform for this awesome software.  Utilizing the high-performance PRJC Teensy 4.1 module, this board is designed to be a community driven project for the PrintNC, but useful for driving any type of CNC machine that uses external stepper drivers.
 
-The GRBLHAL2000 was designed specifically for that machines that we are building in our lab, and it may not have all the features for you.  The GRBL world is surprisingly vibrant and it is very likely that if we are missing a key feature for your, there are other designs out there that will be just what you are looking for.  But this board was includes a few features that we couldn't find on other boards, and it reduces the amount of extra wiring in our machines.  In the co-operative spirit of the PrintNC community, and Open Source Hardware, the PNC HAL 2000 will be licensed and free to use by all parties, including commercial parties, under the CERN-OHL-P V2 license.  It is our hope that the community finds the design useful and that it may be carried forward to help advance the PrintNC and broader CNC hobby community.
+The GRBLHAL2000 was designed specifically for that machines that we are building in our lab, it is not intended to be everything to everyone.  The GRBL world is surprisingly vibrant and it is very likely that if we are missing a key feature for you, there are other designs out there that will be just what you are looking for.  But this board does include a few features that we couldn't find on other boards, and it reduces the amount of extra wiring in our setups.  In the co-operative spirit of the PrintNC community, and Open Source Hardware, the PNC HAL 2000 will be licensed and free to use by all parties, including commercial parties, under the CERN-OHL-P V2 license.  It is our hope that the community finds the design useful and that it may be carried forward to help advance the PrintNC and broader CNC hobby community.
 
 The key features of the GRBLHAL2000:
 
@@ -32,7 +32,7 @@ In addition, the board offers many of the same features found on other 32 bit GR
 ![Overview Image](/readme_images/Board_Overview.jpg)
 
 ### Teensy 4.1 Module
-The GRBLHAL2000 uses the excellent Teensy4.1 port of GRBLHAL.  Both ethernet and USB-UART solutions can be used for sending g-code.
+The GRBLHAL2000 uses the excellent Teensy4.1 port of GRBLHAL.  Both ethernet and USB-UART solutions can be used for sending g-code.  A UART is also connected to the PI header.
 
 ### Power Input
 The board has a single input for 12-24V.  The board has its own onboard 5V regulator to power the Teensy module as well as a Pi Zero W (recommended) or Pi 3 A+ that is attached to the Pi GPIO header.  There is also a small capacity 12V LDO that is specifically for driving the limit and user switches, as well as optionally providing the base voltage for the 10V spindle output.  When driving the board with less than 14V input, it may not be possible to adjust the spindle output voltage to the full 10V.  In this case we recommend applying 12V to the external spindle supply input directly.
@@ -70,9 +70,14 @@ https://github.com/grblHAL/Plugin_I2C_keypad/
 ### Spindle Sync Port
 This port allows a differential connection to an external module for a robust GRBLHAL lathe implementation.  A reference encoder design is under development.  In addition solder jumper options are present to allow this connector to provide a quadrature encoder signal to the Teensy 4.1 QEI pins for future development.
 
+### AUX Relay Port
+Four axilliary relay outputs are exposed.  These have a maximum combined drive current of 500 mA.  The relay voltage can be selected via a 3 pin jumper between the external voltage input (12-28V) and the onboard 5V supply.
+
 ### Raspberry PI expansion header
 ![Pi Pinout](/readme_images/Pi_Pinout.jpg)
 
 This is a standard Raspberry PI GPIO header.  The Pi has the ability to drive the axuilliary outputs, as well as read the status of the real-time control signals.  Three Pi GPIO signals are also brought out to a header on the top side of the board.  The GRBLHAL2000 is capable of powering a Pi Zero W or PI 3 A+ directly, but it cannot supply enough current for a full Pi 3 or Pi4 - when using those you must supply power to the PI externally.
 
-For communicating with the Teensy, the Pi can act as a standard g-code sender and send data over the connected UART.  The I2C keypad interface is also connected to allow for the potential to develop pi based real-time controls.  Finally, the Pi can assert the user switch controls such as emergency stop.  GRBL auxillary inputs are also routed to the Pi in the event they are unused by the GRBLHAL application.
+For communicating with the Teensy, the Pi can act as a standard g-code sender and send data over the connected UART.  The I2C keypad interface is also connected to allow for the potential to develop pi based real-time controls.  Finally, the Pi can assert the user switch controls such as emergency stop.  GRBL auxillary inputs are also routed to the Pi in the event they are unused by the GRBLHAL application.  The Pi can also be used to drive the auxilliar relay outputs.
+
+Three Pi GPIO pins are further broken out to a header near the spindle sync connector.
