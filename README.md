@@ -43,7 +43,7 @@ It is recommended that you cut the 5V power distribution trace on the Teensy 4.1
 
 https://www.pjrc.com/teensy/external_power.html
 
-GRBLHAL2000 has reverse polarity as well as over-current protection beyond 1A.  This is important to consider when using external relays that draw a lot of current as this may overwhelm the capacity of the board.  If you need to drive more than 250 mA through the auxillary and mist/coolant relay outputs, external relays are likley required.
+GRBLHAL2000 has reverse polarity as well as over-current protection beyond 1A.  This is important to consider when using external relays that draw a lot of current as this may overwhelm the capacity of the board.  If you need to drive more than 250 mA through the auxillary and mist/coolant relay outputs, external relays are likely required.
 
 ### Stepper Drivers
 <img src="/readme_images/Stepper_Pins.jpg" width="300">
