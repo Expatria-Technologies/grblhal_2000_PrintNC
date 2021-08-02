@@ -76,7 +76,7 @@ The relay voltage is selectable between either the 12-24V input voltage, or the 
 
 <img src="/readme_images/qwiic-logo-registered.jpg" width="100">
 
-This port is intended to allow for external pendant type devices to issue real-time jogging and override controls to the GRBLHAL controller.  It follows the QWIIC interface from Sparkfun, but adds additional signals for the keypad interrupt as well as the emergency stop.  We feel that a robust and wired control is the safest way to interact with a CNC machine in real time.  A simple reference controller implementation is under development, but are some code examples referenced in the GRBLHAL I2C keypad plugin repository:
+This port is intended to allow for external pendant type devices to issue real-time jogging and override controls to the GRBLHAL controller.  It follows the QWIIC interface from Sparkfun, but adds additional signals for the keypad interrupt as well as the emergency stop.  We feel that a robust and wired control is the safest way to interact with a CNC machine in real time.  A simple reference controller implementation is under development, but there are some code examples referenced in the GRBLHAL I2C keypad plugin repository:
 
 https://github.com/grblHAL/Plugin_I2C_keypad/
 
