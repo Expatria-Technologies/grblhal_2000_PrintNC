@@ -64,7 +64,9 @@ https://github.com/grblHAL/Plugins_spindle/
 ### 5 Axis limit inputs
 By default both GRBL and the GRBLHAL2000 expect NPN NC limit switches.  PNP switches are not supported, and NO switches require soldering jumper resistors on the PCB (see the schematic for details).
 
-Each axis has two limit inputs so that min and max limit switches may be connected in parallel and ganged to a single input pin on the controller.  GRBL always knows the direction of travel so individual min and max pins are not required.  Auto-squaring is supported by enabling ganged axes in GRBLHAL and setting the appropriate pins.  A mapping file for this board will be released soon to make this as easy as possible.
+Each axis has two limit inputs that are logically OR'd together so that min and max limit switches may be connected in parallel and ganged to a single input pin on the controller.  GRBL always knows the direction of travel so individual min and max pins are not required.  Auto-squaring is supported by enabling ganged axes in GRBLHAL and setting the appropriate pins.  A mapping file for this board will be released soon to make this as easy as possible.
+
+Please note that when using limits at only one end of travel (generally if you are just using the limits for homing) then you must jump the unused limit switch input so that the analog OR logic will function correctly.
 
 ### User Buttons
 Standard GRBL functions are mapped to 5 three wire button inputs.  This allows you to easily use lighted indicator buttons or powered sensors for probing or door indication.
