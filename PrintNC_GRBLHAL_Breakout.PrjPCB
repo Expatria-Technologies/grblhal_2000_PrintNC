@@ -431,20 +431,20 @@ Path=..\libraries\*.*
 IncludeSubFolders=1
 
 [Parameter1]
-Name=PCBPARTNO
-Value=GRBLHAL_2000_BOB
+Name=VarRevNo
+Value=A5
 
 [Parameter2]
-Name=PCBREVNO
-Value=A4
-
-[Parameter3]
 Name=Title
 Value=GRBLHAL_2000_BOB
 
+[Parameter3]
+Name=PCBREVNO
+Value=A5
+
 [Parameter4]
-Name=VarRevNo
-Value=A4
+Name=PCBPARTNO
+Value=GRBLHAL_2000_BOB
 
 [Configuration1]
 Name=Default Configuration
