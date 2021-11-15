@@ -15,7 +15,7 @@ The key features of the GRBLHAL2000:
 4) Integrated RS485 with automatic direction control.
 5) Support for closed loop stepper motors.
 6) Differential interface for Spindle Sync inputs.
-7) Sparkfun QWIIC differential I2C endpoint - extends the range of I2C and creates a robust data link for real-time jogging and control.
+7) Sparkfun QWIIC differential I2C endpoint - extends the range of I2C and creates a robust data link for real-time jogging and control.  Note that due to chip availability issues, this interface has been replaced with pin headers on the A5 revision.  See below for details.
 8) Raspberry Pi GPIO connector allows integration of sender software and extended possibilities for network connectivity.
 
 In addition, the board offers many of the same features found on other 32 bit GRBL controllers:
@@ -77,6 +77,8 @@ The relay voltage is selectable between either the 12-24V input voltage, or the 
 ### QWIIC/I2C Real-Time Control Port
 
 <img src="/readme_images/qwiic-logo-registered.jpg" width="100">
+
+On the A5 revision, this interface was revised to remove design dependence on the PCA9615 I2C extender chip.  Instead, pin headers are populated that expose all of the necessary signals to allow a custom I2C extender implementation.  In addition, a reference implementation using the PCA9615 is provided in the QWIIC_CARD folder to see how this might be accomplished and to allow interoperation with existing QWIIC pendants.
 
 This port is intended to allow for external pendant type devices to issue real-time jogging and override controls to the GRBLHAL controller.  It follows the QWIIC interface from Sparkfun, but adds additional signals for the keypad interrupt as well as the emergency stop.  We feel that a robust and wired control is the safest way to interact with a CNC machine in real time.  A simple reference controller implementation is under development, but there are some code examples referenced in the GRBLHAL I2C keypad plugin repository:
 
