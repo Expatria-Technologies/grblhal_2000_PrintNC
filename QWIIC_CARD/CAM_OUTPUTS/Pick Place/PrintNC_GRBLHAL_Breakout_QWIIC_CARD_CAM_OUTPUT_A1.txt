@@ -1,0 +1,32 @@
+Altium Designer Pick and Place Locations
+C:\Repo\grblhal_2000_PrintNC\QWIIC_CARD\Project Outputs for PrintNC_GRBLHAL_Breakout_QWIIC_CARD\PrintNC_GRBLHAL_Breakout_QWIIC_CARD_UPLOAD_GERBERS_A1\Pick Place\PrintNC_GRBLHAL_Breakout_QWIIC_CARD_CAM_OUTPUT_A1.txt
+
+========================================================================================================================
+File Design Information:
+
+Date:       12-10-21
+Time:       11:43
+Revision:   Not in VersionControl
+Variant:    FULL_ASSEMBLY
+Units used: mil
+
+Designator Comment          Layer    Footprint         Center-X(mil) Center-Y(mil) Rotation Description                      
+U2         EL357N(B)(TA)-G  TopLayer SOP-4_P2.54       1176.181      187.992       270      ????                             
+U1         "PCA9615DPJ DNI" TopLayer FP-SOT552-1-IPC_C 875.984       364.173       270      "IC REDRIVER I2C 2CH 10TSSOP"    
+U3         EL357N(B)(TA)-G  TopLayer SOP-4_P2.54       1176.181      600.394       270      ????                             
+R6         "470O ±1%"       TopLayer 0402_R            826.772       610.236       90       "Chip resistor"                  
+R8         "470O ±1%"       TopLayer 0402_R            821.851       88.583        270      "Chip resistor"                  
+R7         "100O ±1%"       TopLayer 0402_R            930.118       182.087       90       "Chip resistor"                  
+R10        "10KO ±1%"       TopLayer 0402_R            1058.071      602.362       90       "Chip resistor"                  
+R1         "470O ±1%"       TopLayer 0402_R            821.851       182.087       270      "Chip resistor"                  
+R9         "680O ±1%"       TopLayer 0402_R            1131.890      384.843       0        "Chip resistor"                  
+R2         "100O ±1%"       TopLayer 0402_R            826.772       524.606       90       "Chip resistor"                  
+R11        "680O ±1%"       TopLayer 0402_R            1218.504      384.842       0        "Chip resistor"                  
+R5         "470O ±1%"       TopLayer 0402_R            875.984       182.087       90       "Chip resistor"                  
+J1         5555799-1        TopLayer FP-5555799-1-MFG  563.779       377.559       270      "CONN MOD JACK 8P8C VERT UNSHLD" 
+C1         1.0uF            TopLayer 0402_C            935.039       608.268       270      "Chip capacitor"                 
+C4         100nF            TopLayer 0402_C            875.984       88.583        90       "Chip capacitors"                
+C2         100nF            TopLayer 0402_C            880.905       608.268       270      "Chip capacitors"                
+C3         1.0uF            TopLayer 0402_C            930.118       88.583        90       "Chip capacitor"                 
+P19        "Header 4"       TopLayer HDR1X4            68.898        448.622       270      "Header, 4-Pin"                  
+P18        "Header 5"       TopLayer HDR1X5            1028.543      272.244       90       "Header, 5-Pin"                  
