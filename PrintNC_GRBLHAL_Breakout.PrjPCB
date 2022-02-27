@@ -425,7 +425,7 @@ UniqueID=2FD7A5CA-1890-45CB-96AB-94166B7423FD
 Description=SMT_ONLY
 AllowFabrication=0
 ParameterCount=0
-VariationCount=59
+VariationCount=63
 Variation1=Designator=P4|UniqueId=\AFAOVGNO\TJUYVNFW|Kind=1|AlternatePart= 
 Variation2=Designator=P7|UniqueId=\AFAOVGNO\QUQIRDXG|Kind=1|AlternatePart= 
 Variation3=Designator=P10|UniqueId=\AFAOVGNO\AEWYKKVC\AKRCEDLD|Kind=1|AlternatePart= 
@@ -485,6 +485,10 @@ Variation56=Designator=J20|UniqueId=\AFAOVGNO\EEKRHIGE\AEBROTNX|Kind=1|Alternate
 Variation57=Designator=J17|UniqueId=\AFAOVGNO\EEKRHIGE\GDSQEZOU|Kind=1|AlternatePart= 
 Variation58=Designator=J18|UniqueId=\AFAOVGNO\EEKRHIGE\HTITXCXL|Kind=1|AlternatePart= 
 Variation59=Designator=J21|UniqueId=\AFAOVGNO\EEKRHIGE\OQNVGGCJ|Kind=1|AlternatePart= 
+Variation60=Designator=P16|UniqueId=\AFAOVGNO\SWMUNWKK|Kind=1|AlternatePart= 
+Variation61=Designator=P17|UniqueId=\AFAOVGNO\CXDKQUOZ|Kind=1|AlternatePart= 
+Variation62=Designator=P18|UniqueId=\AFAOVGNO\QMNPFIMR|Kind=1|AlternatePart= 
+Variation63=Designator=P19|UniqueId=\AFAOVGNO\SURMRVKR|Kind=1|AlternatePart= 
 ParamVariationCount=0
 
 [ProjectVariant2]
@@ -493,7 +497,7 @@ Description=FULL_ASSEMBLY
 AllowFabrication=0
 ParameterCount=0
 VariationCount=6
-Variation1=Designator=U15|UniqueId=\AFAOVGNO\EYEFSMDG|Kind=0|AlternatePart= 
+Variation1=Designator=U15|UniqueId=\AFAOVGNO\EYEFSMDG|Kind=1|AlternatePart= 
 Variation2=Designator=R76|UniqueId=\AFAOVGNO\THQZDJMI|Kind=1|AlternatePart= 
 Variation3=Designator=J?|UniqueId=\AFAOVGNO\HTEUXMHT\EEHNCMGX|Kind=1|AlternatePart= 
 Variation4=Designator=J?|UniqueId=\AFAOVGNO\HTEUXMHT\VPDVMKXC|Kind=1|AlternatePart= 
@@ -514,20 +518,20 @@ Path=..\libraries\*.*
 IncludeSubFolders=1
 
 [Parameter1]
-Name=VarRevNo
-Value=A6
-
-[Parameter2]
-Name=Title
+Name=PCBPARTNO
 Value=GRBLHAL_2000_EST
 
-[Parameter3]
+[Parameter2]
 Name=PCBREVNO
 Value=A6
 
-[Parameter4]
-Name=PCBPARTNO
+[Parameter3]
+Name=Title
 Value=GRBLHAL_2000_EST
+
+[Parameter4]
+Name=VarRevNo
+Value=A6
 
 [Configuration1]
 Name=Default Configuration
