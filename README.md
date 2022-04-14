@@ -27,6 +27,9 @@ In addition, the board offers many of the same features found on other 32 bit GR
 5) Flood/mist relay drivers
 6) Additional auxilliary inputs and relay driver outputs.
 
+Optimized GRBLHAL driver is located here:
+https://github.com/Expatria-Technologies/iMXRT1062
+
 ## GRBLHAL2000 Overview
 
 ![Overview Image](/readme_images/Board_Overview.jpg)
