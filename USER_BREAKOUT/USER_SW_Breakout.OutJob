@@ -79,7 +79,7 @@ Configuration2_Item1=Record=PickPlaceView|Units=Imperial|GenerateCSVFormat=True|
 OutputType3=Gerber
 OutputName3=Gerber Files
 OutputCategory3=Fabrication
-OutputDocumentPath3=PrintNC_GRBLHAL_Breakout.pcbdoc
+OutputDocumentPath3=USER_SW_Breakout.pcbdoc
 OutputVariantName3=
 OutputEnabled3=1
 OutputEnabled3_OutputMedium1=0
@@ -95,7 +95,7 @@ Configuration3_Item1=AddToAllLayerClasses.Set= |AddToAllPlots.Set=SerializeLayer
 OutputType4=NC Drill
 OutputName4=NC Drill Files
 OutputCategory4=Fabrication
-OutputDocumentPath4=PrintNC_GRBLHAL_Breakout.pcbdoc
+OutputDocumentPath4=USER_SW_Breakout.pcbdoc
 OutputVariantName4=
 OutputEnabled4=1
 OutputEnabled4_OutputMedium1=0
@@ -193,7 +193,7 @@ PcbPrintPreferences7=SubsititueFont_Default=True|SubsititueFont_Serif=True|Subsi
 OutputType8=Assembly
 OutputName8=Paper_exercise
 OutputCategory8=Assembly
-OutputDocumentPath8=PrintNC_GRBLHAL_Breakout.pcbdoc
+OutputDocumentPath8=USER_SW_Breakout.pcbdoc
 OutputVariantName8=
 OutputEnabled8=0
 OutputEnabled8_OutputMedium1=0
@@ -260,7 +260,7 @@ Configuration9_Item6=Comment=120|Description=120|Designator=120|Footprint=120|Su
 OutputType10=PCB 3D Print
 OutputName10=PCB BOTTOM
 OutputCategory10=Documentation
-OutputDocumentPath10=PrintNC_GRBLHAL_Breakout.pcbdoc
+OutputDocumentPath10=USER_SW_Breakout.pcbdoc
 OutputVariantName10=
 OutputEnabled10=0
 OutputEnabled10_OutputMedium1=0
@@ -277,7 +277,7 @@ Configuration10_Item1=Record=Pcb3DPrintView|ResX=150|ResY=150|ViewX=39370079|Vie
 OutputType11=PCB 3D Print
 OutputName11=PCB TOP
 OutputCategory11=Documentation
-OutputDocumentPath11=PrintNC_GRBLHAL_Breakout.pcbdoc
+OutputDocumentPath11=USER_SW_Breakout.pcbdoc
 OutputVariantName11=
 OutputEnabled11=0
 OutputEnabled11_OutputMedium1=0
@@ -295,7 +295,7 @@ Configuration11_Item1=Record=Pcb3DPrintView|ResX=150|ResY=150|ViewX=39370079|Vie
 [PublishSettings]
 OutputFilePath2=D:\Bluebell\cmt-bluebell\Circuit Design\bluebell-RevB\Project Outputs for bluebell-Pod-RevB\bluebell-Pod-RevB_Schematic_B6_VariantName.PDF
 ReleaseManaged2=1
-OutputBasePath2=Project Outputs for PrintNC_GRBLHAL_Breakout
+OutputBasePath2=Project Outputs for USER_SW_Breakout
 OutputPathMedia2=[Media Name]
 OutputPathMediaValue2=
 OutputPathOutputer2=[Output Type]
@@ -322,7 +322,7 @@ PDFACompliance2=Disabled
 PDFVersion2=Default
 OutputFilePath3=C:\Repo\grblhal_2000_PrintNC\Project Outputs for PrintNC_GRBLHAL_Breakout\PrintNC_GRBLHAL_Breakout_UPLOAD_GERBERS_A5\
 ReleaseManaged3=1
-OutputBasePath3=Project Outputs for PrintNC_GRBLHAL_Breakout
+OutputBasePath3=Project Outputs for USER_SW_Breakout
 OutputPathMedia3==ProjectName+_UPLOAD_GERBERS_+VarRevNo
 OutputPathMediaValue3==ProjectName+_UPLOAD_GERBERS_+VarRevNo
 OutputPathOutputer3=[Output Type]
@@ -335,7 +335,7 @@ OutputFileNameSpecial3=
 OpenOutput3=0
 OutputFilePath4=C:\Repo\grblhal_2000_PrintNC\Project Outputs for PrintNC_GRBLHAL_Breakout\
 ReleaseManaged4=1
-OutputBasePath4=Project Outputs for PrintNC_GRBLHAL_Breakout
+OutputBasePath4=Project Outputs for USER_SW_Breakout
 OutputPathMedia4=
 OutputPathMediaValue4==VariantName
 OutputPathOutputer4=[Output Type]
@@ -348,7 +348,7 @@ OutputFileNameSpecial4=
 OpenOutput4=1
 OutputFilePath7=D:\silver-bullet\cmt-bluebell\Circuit Design\bluebell-RevE\Project Outputs for bluebell-Pod-RevE\bluebell-RevE.PDF
 ReleaseManaged7=1
-OutputBasePath7=Project Outputs for PrintNC_GRBLHAL_Breakout
+OutputBasePath7=Project Outputs for USER_SW_Breakout
 OutputPathMedia7=
 OutputPathMediaValue7=
 OutputPathOutputer7=[Output Type]

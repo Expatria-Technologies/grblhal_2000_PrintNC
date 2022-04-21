@@ -1,0 +1,33 @@
+Altium Designer Pick and Place Locations
+C:\Repo\grblhal_2000_PrintNC\USER_BREAKOUT\Project Outputs for USER_SW_Breakout\USER_SW_Breakout_UPLOAD_GERBERS_A6\Pick Place\USER_SW_Breakout_CAM_OUTPUT_A6.csv
+
+========================================================================================================================
+File Design Information:
+
+Date:       20-04-22
+Time:       18:41
+Revision:   ad6a2c31f90c326176457e068809b93107f07e88
+Variant:    FULL_ASSEMBLY
+Units used: mil
+
+"Designator","Comment","Layer","Footprint","Center-X(mil)","Center-Y(mil)","Rotation","Description"
+"Logo1","Expatria Technologies","BottomOverlay","Expatria-Logo","2455.701","4461.308","90",""
+"J24","RJHSE-5080","TopLayer","FP-RJHSE-5080-MFG","4704.961","4448.819","90","CONN MOD JACK 8P8C R/A UNSHLD"
+"SW3","K2-1102SP-C4SC-04","TopLayer","TECO-FSM4JSMATR_V","1796.260","4448.819","0","Top Actuated 50mA @ 12VDC Round Button SPST 6*6mm Tactile Switches ROHS"
+"SW2","K2-1102SP-C4SC-04","TopLayer","TECO-FSM4JSMATR_V","3238.189","4448.819","0","Top Actuated 50mA @ 12VDC Round Button SPST 6*6mm Tactile Switches ROHS"
+"SW1","K2-1102SP-C4SC-04","TopLayer","TECO-FSM4JSMATR_V","501.969","4448.819","0","Top Actuated 50mA @ 12VDC Round Button SPST 6*6mm Tactile Switches ROHS"
+"R91","2KO ±1%","TopLayer","0603_R","1988.189","4611.378","180","Chip resistor"
+"R90","2KO ±1%","TopLayer","0603_R","1988.189","4532.638","180","Chip resistor"
+"R89","2KO ±1%","TopLayer","0603_R","4062.992","4758.858","180","Chip resistor"
+"R88","2KO ±1%","TopLayer","0603_R","688.976","4611.378","180","Chip resistor"
+"R87","2KO ±1%","TopLayer","0603_R","688.976","4527.717","180","Chip resistor"
+"R86","2KO ±1%","TopLayer","0603_R","3430.118","4611.378","180","Chip resistor"
+"R85","2KO ±1%","TopLayer","0603_R","3430.118","4527.717","180","Chip resistor"
+"J28","WJ15EDGVC-3.5-3P","TopLayer","SL_3_50_180G_03","4158.465","4448.819","90","Header,Male Pin,Covered(4 Sided) 3 1 0.138"(3.50mm) 3 P=3.5mm Pluggable System Terminal Block RoHS"
+"J27","WJ15EDGVC-3.5-3P","TopLayer","SL_3_50_180G_03","1491.142","4448.819","90","Header,Male Pin,Covered(4 Sided) 3 1 0.138"(3.50mm) 3 P=3.5mm Pluggable System Terminal Block RoHS"
+"J26","WJ15EDGVC-3.5-3P","TopLayer","SL_3_50_180G_03","2933.071","4448.819","90","Header,Male Pin,Covered(4 Sided) 3 1 0.138"(3.50mm) 3 P=3.5mm Pluggable System Terminal Block RoHS"
+"J25","WJ15EDGVC-3.5-3P","TopLayer","SL_3_50_180G_03","183.268","4448.819","90","Header,Male Pin,Covered(4 Sided) 3 1 0.138"(3.50mm) 3 P=3.5mm Pluggable System Terminal Block RoHS"
+"D34","0603 Yellow","TopLayer","0603_LED_S1","1983.268","4424.212","270","LED"
+"D33","0603 Yellow","TopLayer","0603_LED_S1","4187.992","4758.858","0","LED"
+"D32","0603 Red","TopLayer","0603_LED_S1","679.134","4419.291","270","LED"
+"D31","0603 Green","TopLayer","0603_LED_S1","3430.118","4419.291","270","LED"

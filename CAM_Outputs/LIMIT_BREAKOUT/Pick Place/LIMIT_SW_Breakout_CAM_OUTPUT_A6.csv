@@ -1,0 +1,35 @@
+Altium Designer Pick and Place Locations
+C:\Repo\grblhal_2000_PrintNC\LIMIT_BREAKOUT\Project Outputs for LIMIT_SW_Breakout\LIMIT_SW_Breakout_UPLOAD_GERBERS_A6\Pick Place\LIMIT_SW_Breakout_CAM_OUTPUT_A6.csv
+
+========================================================================================================================
+File Design Information:
+
+Date:       20-04-22
+Time:       18:46
+Revision:   ad6a2c31f90c326176457e068809b93107f07e88
+Variant:    FULL_ASSEMBLY
+Units used: mil
+
+"Designator","Comment","Layer","Footprint","Center-X(mil)","Center-Y(mil)","Rotation","Description"
+"Logo1","Expatria Technologies","BottomOverlay","Expatria-Logo","4456.013","3417.598","180",""
+"J23","5555799-1","TopLayer","FP-5555799-1-MFG","4448.819","323.031","0","CONN MOD JACK 8P8C VERT UNSHLD"
+"R84","2KO ±1%","TopLayer","0603_R","4089.567","1633.858","90","Chip resistor"
+"R83","2KO ±1%","TopLayer","0603_R","4089.567","1082.677","90","Chip resistor"
+"R82","2KO ±1%","TopLayer","0603_R","4089.567","2165.354","90","Chip resistor"
+"R81","2KO ±1%","TopLayer","0603_R","4089.567","2706.693","90","Chip resistor"
+"R80","2KO ±1%","TopLayer","0603_R","4089.567","3243.110","90","Chip resistor"
+"R79","2KO ±1%","TopLayer","0603_R","4089.567","3779.528","90","Chip resistor"
+"R78","10KO ±1%","TopLayer","0603_R","4060.039","575.787","270","Chip resistor"
+"J22","WJ15EDGVC-3.5-3P","TopLayer","SL_3_50_180G_03","4448.819","3682.283","0","Header,Male Pin,Covered(4 Sided) 3 1 0.138"(3.50mm) 3 P=3.5mm Pluggable System Terminal Block RoHS"
+"J21","WJ15EDGVC-3.5-3P","TopLayer","SL_3_50_180G_03","4448.819","1527.795","0","Header,Male Pin,Covered(4 Sided) 3 1 0.138"(3.50mm) 3 P=3.5mm Pluggable System Terminal Block RoHS"
+"J20","WJ15EDGVC-3.5-3P","TopLayer","SL_3_50_180G_03","4448.819","989.173","0","Header,Male Pin,Covered(4 Sided) 3 1 0.138"(3.50mm) 3 P=3.5mm Pluggable System Terminal Block RoHS"
+"J19","WJ15EDGVC-3.5-3P","TopLayer","SL_3_50_180G_03","4448.819","2066.417","0","Header,Male Pin,Covered(4 Sided) 3 1 0.138"(3.50mm) 3 P=3.5mm Pluggable System Terminal Block RoHS"
+"J18","WJ15EDGVC-3.5-3P","TopLayer","SL_3_50_180G_03","4448.819","2605.039","0","Header,Male Pin,Covered(4 Sided) 3 1 0.138"(3.50mm) 3 P=3.5mm Pluggable System Terminal Block RoHS"
+"J17","WJ15EDGVC-3.5-3P","TopLayer","SL_3_50_180G_03","4448.819","3143.661","0","Header,Male Pin,Covered(4 Sided) 3 1 0.138"(3.50mm) 3 P=3.5mm Pluggable System Terminal Block RoHS"
+"D30","0603 White","TopLayer","0603_LED_S1","4089.567","1471.457","270","LED"
+"D29","0603 White","TopLayer","0603_LED_S1","4089.567","925.197","270","LED"
+"D28","0603 Yellow","TopLayer","0603_LED_S1","4089.567","2002.953","270","LED"
+"D27","0603 Yellow","TopLayer","0603_LED_S1","4089.567","2545.079","270","LED"
+"D26","0603 Yellow","TopLayer","0603_LED_S1","4089.567","3080.709","270","LED"
+"D25","0603 Yellow","TopLayer","0603_LED_S1","4089.567","3622.047","270","LED"
+"D24","0805 Green","TopLayer","0805_LED_S1","4060.039","398.622","270","LED"
