@@ -8,6 +8,9 @@ grblHAL is a no-compromise, high performance, low cost alternative to parallel-p
 
 The GRBLHAL2000 was designed specifically for that machines that we are building in our lab, it is not intended to be everything to everyone.  The GRBL world is surprisingly vibrant and it is very likely that if we are missing a key feature for you, there are other designs out there that will be just what you are looking for.  But this board does include a few features that we couldn't find on other boards, and it reduces the amount of extra wiring in our setups.  In the co-operative spirit of the PrintNC community, and Open Source Hardware, the PNC HAL 2000 will be licensed and free to use by all parties, including commercial parties, under the CERN-OHL-P V2 license.  It is our hope that the community finds the design useful and that it may be carried forward to help advance the PrintNC and broader CNC hobby community.
 
+Since this is not a commercial product, the best place to get a board (other than ordering a stack from the provided CAM files) is from the PrintNC community:
+https://wiki.printnc.info/en/grbl/GRBLHAL2000-marketplace
+
 The most recent A6 revision incorporates community driven updates from the PrintNC Electronic Standardization (EST) Project.  As part of this project, two additional breakout boards have been created for the user controls and limits/probe inputs.  These are simple boards and could easily be milled and hand assembled, but fabrication files for each are available in the CAM_Outputs folder.  In addition, the GRBLHAL2000 is intended to be used with the I2C jog controller or similar peripheral:
 
 https://github.com/Expatria-Technologies/I2C_Jog_Controller
