@@ -1,4 +1,4 @@
-# GRBLHAL2000 for PrintNC
+# GRBLHAL2000 for PrintNC EST
 
 ![Logo](/readme_images/logo_sm.jpg)
 
@@ -8,6 +8,11 @@ grblHAL is a no-compromise, high performance, low cost alternative to parallel-p
 
 The GRBLHAL2000 was designed specifically for that machines that we are building in our lab, it is not intended to be everything to everyone.  The GRBL world is surprisingly vibrant and it is very likely that if we are missing a key feature for you, there are other designs out there that will be just what you are looking for.  But this board does include a few features that we couldn't find on other boards, and it reduces the amount of extra wiring in our setups.  In the co-operative spirit of the PrintNC community, and Open Source Hardware, the PNC HAL 2000 will be licensed and free to use by all parties, including commercial parties, under the CERN-OHL-P V2 license.  It is our hope that the community finds the design useful and that it may be carried forward to help advance the PrintNC and broader CNC hobby community.
 
+The most recent A6 revision incorporates community driven updates from the PrintNC Electronic Standardization (EST) Project.  As part of this project, two additional breakout boards have been created for the user controls and limits/probe inputs.  These are simple boards and could easily be milled and hand assembled, but fabrication files for each are available in the CAM_Outputs folder.  In addition, the GRBLHAL2000 is intended to be used with the I2C jog controller or similar peripheral:
+
+https://github.com/Expatria-Technologies/I2C_Jog_Controller
+
+
 The key features of the GRBLHAL2000:
 
 1) Integrated support for 3 wire powered switches such as the inductive type commonly used by the PrintNC community.
@@ -15,15 +20,15 @@ The key features of the GRBLHAL2000:
 4) Integrated RS485 with automatic direction control.
 5) Support for closed loop stepper motors.
 6) Differential interface for Spindle Sync inputs.
-7) Sparkfun QWIIC differential I2C endpoint - extends the range of I2C and creates a robust data link for real-time jogging and control.  Note that due to chip availability issues, this interface has been replaced with pin headers on the A5 revision.  See below for details.
+7) Sparkfun QWIIC differential I2C endpoint - extends the range of I2C and creates a robust data link for real-time jogging and control.  Note that due to chip availability issues, this interface has been replaced with pin headers on the A5 revision onwards.  See below for details.
 8) Raspberry Pi GPIO connector allows integration of sender software and extended possibilities for network connectivity.
 
 In addition, the board offers many of the same features found on other 32 bit GRBL controllers:
 
 1) 5 axes of external step/direction for driving external stepper or servo drivers.
 2) 10V or 5V spindle control.
-3) 3 wire (powered) connections for standard GRBL buttons.
-4) Min max limit inputs - each pair of inputs drives a single limit pin.
+3) 3 wire (powered) connections for standard GRBL buttons on brekoput RJ45 connector.
+4) XYZA limit switches and toolsetter on breakout RJ45 connector.
 5) Flood/mist relay drivers
 6) Additional auxilliary inputs and relay driver outputs.
 
@@ -65,14 +70,27 @@ https://github.com/bvarner/pi485
 https://github.com/grblHAL/Plugins_spindle/
 
 ### 5 Axis limit inputs
-By default both GRBL and the GRBLHAL2000 expect NPN NC limit switches.  PNP switches are not supported, and NO switches can be used when only one switch per input pin is populated.
 
-Each axis has two limit inputs that are logically OR'd together so that min and max limit switches may be connected in parallel and ganged to a single input pin on the controller.  GRBL always knows the direction of travel so individual min and max pins are not required.  Auto-squaring is supported by enabling ganged axes in GRBLHAL and setting the appropriate pins.
+<img src="/readme_images/limit_mod_render.jpg" width="150">
 
-Please note that when using limits at only one end of travel (generally if you are just using the limits for homing) then you must jump the unused limit switch input so that the analog OR logic will function correctly.
+By default both GRBL and the GRBLHAL2000 expect NPN NC limit switches.  PNP switches are not supported. NO switches can also be used on any switch input
+
+The first four axes have single limit inputs that are accessed via the RJ45 limit breakout connector.  A sample design for a breakout panel is included in the CAM_Outputs folder.  The fifth (M4 or B axis) limit input is multiplexed via XOR logic between two 3 wire connections to allow for future flexibility.  GRBL always knows the direction of travel so individual min and max pins are not required.  Auto-squaring is supported by enabling ganged axes in GRBLHAL and setting the appropriate pins.
+
+In addition to the B limit, there are two probe input pins on the limit RJ45 breakout connector that are also multiplexed via XOR logic.
+
+For both of the dual-input signals there is no need to terminate unused ports.
+
+The RJ45 pinout:
+<img src="/readme_images/limit_rj45_pinout.jpg" width="150">
 
 ### User Buttons
-Standard GRBL functions are mapped to 5 three wire button inputs.  This allows you to easily use lighted indicator buttons or powered sensors for probing or door indication.
+<img src="/readme_images/User_mod_render.jpg" width="400">
+
+Standard GRBL functions are mapped to 4 inputs.  These signals are primarily intended to be used via the user RJ45 connector.  For convenience, the HALT and DOOR signals are also exposed via 3 wire connections on the main PCB.  When multiplexed these signals must be NO logic.  A sample design for a button panel utilizing clear PETG buttons is included in the CAM_Outputs folder.
+
+The RJ45 pinout:
+<img src="/readme_images/user_rj45_pinout.jpg" width="150">
 
 ### Flood and Mist relay drivers - Auxillary relay drivers
 The relay voltage is selectable between either the 12-24V input voltage, or the onboard 5V supply. P9 allows you to select the relay voltage.  If you need to drive more than 250 mA through the auxillary and mist/coolant relay outputs, larger external relays are likley required.
@@ -105,4 +123,6 @@ For communicating with the Teensy, the Pi can act as a standard g-code sender an
 This project uses components from the very helpful actiBMS library for JLCPCB SMT parts.
 
 https://github.com/actiBMS/JLCSMT_LIB
+
+
 
