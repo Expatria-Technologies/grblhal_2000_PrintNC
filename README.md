@@ -27,8 +27,8 @@ In addition, the board offers many of the same features found on other 32 bit GR
 
 1) 5 axes of external step/direction for driving external stepper or servo drivers.
 2) 10V or 5V spindle control.
-3) 3 wire (powered) connections for standard GRBL buttons on brekoput RJ45 connector.
-4) XYZA limit switches and toolsetter on breakout RJ45 connector.
+3) 3 wire (powered) connections for standard GRBL buttons on breakout RJ45 connector.
+4) XYZA limit switches and probe/toolsetter on breakout RJ45 connector.
 5) Flood/mist relay drivers
 6) Additional auxilliary inputs and relay driver outputs.
 
