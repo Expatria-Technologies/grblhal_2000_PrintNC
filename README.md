@@ -4,7 +4,7 @@
 
 Expatria Technologies GRBLHAL Breakout board
 
-grblHAL is a no-compromise, high performance, low cost alternative to parallel-port-based motion control for CNC milling, and the GRBLHAL2000 breakout board is a highly integrated, no compromise host platform for this awesome software.  Utilizing the high-performance PRJC Teensy 4.1 module, this board is designed to be a community driven project for the PrintNC, but useful for driving any type of CNC machine that uses external stepper drivers.
+grblHAL is a no-compromise, high performance, low cost alternative to parallel-port-based motion control for CNC milling, and the GRBLHAL2000 breakout board is a highly integrated, no compromise host platform for this awesome software.  Utilizing the high-performance PJRC Teensy 4.1 module, this board is designed to be a community driven project for the PrintNC, but useful for driving any type of CNC machine that uses external stepper drivers.
 
 The GRBLHAL2000 was designed specifically for that machines that we are building in our lab, it is not intended to be everything to everyone.  The GRBL world is surprisingly vibrant and it is very likely that if we are missing a key feature for you, there are other designs out there that will be just what you are looking for.  But this board does include a few features that we couldn't find on other boards, and it reduces the amount of extra wiring in our setups.  In the co-operative spirit of the PrintNC community, and Open Source Hardware, the PNC HAL 2000 will be licensed and free to use by all parties, including commercial parties, under the CERN-OHL-P V2 license.  It is our hope that the community finds the design useful and that it may be carried forward to help advance the PrintNC and broader CNC hobby community.
 
@@ -15,7 +15,7 @@ The key features of the GRBLHAL2000:
 4) Integrated RS485 with automatic direction control.
 5) Support for closed loop stepper motors.
 6) Differential interface for Spindle Sync inputs.
-7) Sparkfun QWIIC differential I2C endpoint - extends the range of I2C and creates a robust data link for real-time jogging and control.
+7) Sparkfun QWIIC differential I2C endpoint - extends the range of I2C and creates a robust data link for real-time jogging and control.  Note that due to chip availability issues, this interface has been replaced with pin headers on the A5 revision.  See below for details.
 8) Raspberry Pi GPIO connector allows integration of sender software and extended possibilities for network connectivity.
 
 In addition, the board offers many of the same features found on other 32 bit GRBL controllers:
@@ -27,6 +27,9 @@ In addition, the board offers many of the same features found on other 32 bit GR
 5) Flood/mist relay drivers
 6) Additional auxilliary inputs and relay driver outputs.
 
+Optimized GRBLHAL driver is located here:
+https://github.com/Expatria-Technologies/iMXRT1062
+
 ## GRBLHAL2000 Overview
 
 ![Overview Image](/readme_images/Board_Overview.jpg)
@@ -37,7 +40,7 @@ The GRBLHAL2000 uses the excellent Teensy4.1 port of GRBLHAL.  Both ethernet and
 https://github.com/grblHAL/Plugin_networking/
 
 ### Power Input
-There is a single input for 12-24V.  The board has its own onboard 5V regulator to power the Teensy module as well as a Pi Zero W (recommended) or Pi 3 A+ that is attached to the Pi GPIO header.  There is also a small capacity 12V LDO that is specifically for driving the limit and user switches, as well as optionally providing the base voltage for the 10V spindle output.  When driving the board with less than 14V input, it may not be possible to adjust the spindle output voltage to the full 10V.  In this case we recommend applying 12V to the external spindle supply input directly.
+There is a single input for 12-24VDC.  The board has its own onboard 5V regulator to power the Teensy module as well as a Pi Zero W (recommended) or Pi 3 A+ that is attached to the Pi GPIO header.  There is also a small capacity 12V LDO that is specifically for driving the limit and user switches, as well as optionally providing the base voltage for the 10V spindle output.  When driving the board with less than 14V input, it may not be possible to adjust the spindle output voltage to the full 10V.  In this case we recommend applying 12V to the external spindle supply input directly.
 
 It is recommended that you cut the 5V power distribution trace on the Teensy 4.1.  This ensures that the USB power on the Teensy and the 5V regulator on the GRBLHAL2000 do not interact and create potential issues with back-powering.  Alternative solutions are detailed at pjrc:
 
@@ -51,7 +54,7 @@ GRBLHAL2000 has reverse polarity as well as over-current protection beyond 1A.  
 The stepper drivers are designed to be used with IDC connectors that are quick to assemble.  Unfortuantely you will need to ensure that at the external driver the high and low signal pairs are connected correctly as there is no standard pinout on these drivers.  The 8 pin conneciton allows you to run a high and low pair for every signal to ensure the best possible signal integrity.  If desired, L2 and L3 can be swapped so that the steppers can be driven with 12V.
 
 ### Analog Spindle Control
-Traditional GRBL spindle control interface for 0-10V or 0-5V spindle control.  Uses a dual-stage output driver for linear response.  Spindle power supply is selectable between 5V, 12V or external.  Spindle output voltage should be tuned with the trimpot before use.  Note that when running the board with less than 14v input, it may not be possible to reach the full 10V output level - this is due to the dropout of the 12V LDO.  In this case, use the external spindle power input to connect your 12v and bypass the LDO for the spindle control voltage.
+Traditional GRBL spindle control interface for 0-10V or 0-5V spindle control.  Uses a dual-stage output driver for linear response.  Spindle power supply is selectable between 5V, 12V or external.  Note that when running the board with less than 14v input, it may not be possible to reach the full 10V output level - this is due to the dropout of the 12V LDO.  In this case, use the external spindle power input to connect your 12v and bypass the LDO for the spindle control voltage.
 
 
 ### RS485 Spindle Control
@@ -62,9 +65,9 @@ https://github.com/bvarner/pi485
 https://github.com/grblHAL/Plugins_spindle/
 
 ### 5 Axis limit inputs
-By default both GRBL and the GRBLHAL2000 expect NPN NC limit switches.  PNP switches are not supported, and NO switches require soldering jumper resistors on the PCB (see the schematic for details).
+By default both GRBL and the GRBLHAL2000 expect NPN NC limit switches.  PNP switches are not supported, and NO switches can be used when only one switch per input pin is populated.
 
-Each axis has two limit inputs that are logically OR'd together so that min and max limit switches may be connected in parallel and ganged to a single input pin on the controller.  GRBL always knows the direction of travel so individual min and max pins are not required.  Auto-squaring is supported by enabling ganged axes in GRBLHAL and setting the appropriate pins.  A mapping file for this board will be released soon to make this as easy as possible.
+Each axis has two limit inputs that are logically OR'd together so that min and max limit switches may be connected in parallel and ganged to a single input pin on the controller.  GRBL always knows the direction of travel so individual min and max pins are not required.  Auto-squaring is supported by enabling ganged axes in GRBLHAL and setting the appropriate pins.
 
 Please note that when using limits at only one end of travel (generally if you are just using the limits for homing) then you must jump the unused limit switch input so that the analog OR logic will function correctly.
 
@@ -77,6 +80,8 @@ The relay voltage is selectable between either the 12-24V input voltage, or the 
 ### QWIIC/I2C Real-Time Control Port
 
 <img src="/readme_images/qwiic-logo-registered.jpg" width="100">
+
+On the A5 revision, this interface was revised to remove design dependence on the PCA9615 I2C extender chip.  Instead, pin headers are populated that expose all of the necessary signals to allow a custom I2C extender implementation.  In addition, a reference implementation using the PCA9615 is provided in the QWIIC_CARD folder to see how this might be accomplished and to allow interoperation with existing QWIIC pendants.
 
 This port is intended to allow for external pendant type devices to issue real-time jogging and override controls to the GRBLHAL controller.  It follows the QWIIC interface from Sparkfun, but adds additional signals for the keypad interrupt as well as the emergency stop.  We feel that a robust and wired control is the safest way to interact with a CNC machine in real time.  A simple reference controller implementation is under development, but there are some code examples referenced in the GRBLHAL I2C keypad plugin repository:
 
