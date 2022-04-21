@@ -126,6 +126,11 @@ This is a standard Raspberry PI GPIO header.  The Pi has the ability to drive th
 
 For communicating with the Teensy, the Pi can act as a standard g-code sender and send data over the connected UART.  The I2C keypad interface is also connected to allow for the potential to develop pi based real-time controls.  Finally, the Pi can assert the user switch controls such as emergency stop.  GRBL auxillary inputs are also routed to the Pi in the event they are unused by the GRBLHAL application.  The Pi can also be used to drive the auxilliar relay outputs.
 
+### GRBLHAL2000 EST Ecosystem
+Complete GRBLHAL2000 ecosystem with Jogger, breakouts and motion controller.
+
+<img src="/readme_images/EST_Ecosystem.png" width="500">
+
 ### Attributions
 This project uses components from the very helpful actiBMS library for JLCPCB SMT parts.
 
