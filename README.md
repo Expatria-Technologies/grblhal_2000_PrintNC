@@ -18,7 +18,7 @@ The key features of the GRBLHAL2000:
 1) Integrated support for 3 wire powered switches such as the inductive type commonly used by the PrintNC community.
 3) Onboard 5V regulator for the Teensy and PI connectors.
 4) Integrated RS485 with automatic direction control.
-5) Support for closed loop stepper motors.
+5) Support for closed loop stepper motors and servos.
 6) Differential interface for Spindle Sync inputs.
 7) Sparkfun QWIIC differential I2C endpoint - extends the range of I2C and creates a robust data link for real-time jogging and control.  Note that due to chip availability issues, this interface has been replaced with pin headers on the A5 revision onwards.  See below for details.
 8) Raspberry Pi GPIO connector allows integration of sender software and extended possibilities for network connectivity.
