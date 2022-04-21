@@ -68,7 +68,7 @@ https://github.com/grblHAL/Plugins_spindle/
 
 ### 5 Axis limit inputs
 
-<img src="/readme_images/limit_rj45_pinout.jpg" width="100">
+<img src="/readme_images/limit_rj45_pinout.jpg" width="150">
 
 By default both GRBL and the GRBLHAL2000 expect NPN NC limit switches.  PNP switches are not supported. NO switches can also be used on any switch input.
 
@@ -80,7 +80,7 @@ For both of the dual-input signals there is no need to terminate unused ports.
 
 ### User Buttons
 
-<img src="/readme_images/user_rj45_pinout.jpg" width="100">
+<img src="/readme_images/user_rj45_pinout.jpg" width="150">
 
 Standard GRBL functions are mapped to 4 inputs.  These signals are primarily intended to be used via the user RJ45 connector.  For convenience, the HALT and DOOR signals are also exposed via 3 wire connections on the main PCB.  When multiplexed these signals must be NO logic.
 
