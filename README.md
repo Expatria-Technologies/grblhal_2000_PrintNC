@@ -103,6 +103,8 @@ The relay voltage is selectable between either the 12-24V input voltage, or the 
 
 On the A5 revision, this interface was revised to remove design dependence on the PCA9615 I2C extender chip.  Instead, pin headers are populated that expose all of the necessary signals to allow a custom I2C extender implementation.  In addition, a reference implementation using the PCA9615 is provided in the QWIIC_CARD folder to see how this might be accomplished and to allow interoperation with existing QWIIC pendants.
 
+Please note that at least on Expatria designed pendants, the I2C interface module is usually included as a breakaway tab as part of the jogger pendant.  It will not be necessary to build the example QWIIC card separately.
+
 This port is intended to allow for external pendant type devices to issue real-time jogging and override controls to the GRBLHAL controller.  It follows the QWIIC interface from Sparkfun, but adds additional signals for the keypad interrupt as well as the emergency stop.  We feel that a robust and wired control is the safest way to interact with a CNC machine in real time.  A simple reference controller implementation is under development, but there are some code examples referenced in the GRBLHAL I2C keypad plugin repository:
 
 https://github.com/grblHAL/Plugin_I2C_keypad/
