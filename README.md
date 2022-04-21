@@ -71,21 +71,26 @@ https://github.com/grblHAL/Plugins_spindle/
 
 ### 5 Axis limit inputs
 
-<img src="/readme_images/limit_rj45_pinout.jpg" width="150">
+<img src="/readme_images/limit_mod_render.jpg" width="150">
 
-By default both GRBL and the GRBLHAL2000 expect NPN NC limit switches.  PNP switches are not supported. NO switches can also be used on any switch input.
+By default both GRBL and the GRBLHAL2000 expect NPN NC limit switches.  PNP switches are not supported. NO switches can also be used on any switch input
 
-The first four axes have single limit inputs that are accessed via the RJ45 limit breakout connector.  The fifth (M4 or B axis) limit input is multiplexed via XOR logic between two 3 wire connections to allow for future flexibility.  GRBL always knows the direction of travel so individual min and max pins are not required.  Auto-squaring is supported by enabling ganged axes in GRBLHAL and setting the appropriate pins.
+The first four axes have single limit inputs that are accessed via the RJ45 limit breakout connector.  A sample design for a breakout panel is included in the CAM_Outputs folder.  The fifth (M4 or B axis) limit input is multiplexed via XOR logic between two 3 wire connections to allow for future flexibility.  GRBL always knows the direction of travel so individual min and max pins are not required.  Auto-squaring is supported by enabling ganged axes in GRBLHAL and setting the appropriate pins.
 
 In addition to the B limit, there are two probe input pins on the limit RJ45 breakout connector that are also multiplexed via XOR logic.
 
 For both of the dual-input signals there is no need to terminate unused ports.
 
+The RJ45 pinout:
+<img src="/readme_images/limit_rj45_pinout.jpg" width="150">
+
 ### User Buttons
+<img src="/readme_images/User_mod_render.jpg" width="400">
 
+Standard GRBL functions are mapped to 4 inputs.  These signals are primarily intended to be used via the user RJ45 connector.  For convenience, the HALT and DOOR signals are also exposed via 3 wire connections on the main PCB.  When multiplexed these signals must be NO logic.  A sample design for a button panel utilizing clear PETG buttons is included in the CAM_Outputs folder.
+
+The RJ45 pinout:
 <img src="/readme_images/user_rj45_pinout.jpg" width="150">
-
-Standard GRBL functions are mapped to 4 inputs.  These signals are primarily intended to be used via the user RJ45 connector.  For convenience, the HALT and DOOR signals are also exposed via 3 wire connections on the main PCB.  When multiplexed these signals must be NO logic.
 
 ### Flood and Mist relay drivers - Auxillary relay drivers
 The relay voltage is selectable between either the 12-24V input voltage, or the onboard 5V supply. P9 allows you to select the relay voltage.  If you need to drive more than 250 mA through the auxillary and mist/coolant relay outputs, larger external relays are likley required.
@@ -113,9 +118,6 @@ Four axilliary relay outputs are exposed.  These have a maximum combined drive c
 This is a standard Raspberry PI GPIO header.  The Pi has the ability to drive the axuilliary outputs, as well as read the status of the real-time control signals.  Three Pi GPIO signals are also brought out to a header on the top side of the board.  The GRBLHAL2000 is capable of powering a Pi Zero W or PI 3 A+ directly, but it cannot supply enough current for a full Pi 3 or Pi4 - when using those you must supply power to the PI externally.
 
 For communicating with the Teensy, the Pi can act as a standard g-code sender and send data over the connected UART.  The I2C keypad interface is also connected to allow for the potential to develop pi based real-time controls.  Finally, the Pi can assert the user switch controls such as emergency stop.  GRBL auxillary inputs are also routed to the Pi in the event they are unused by the GRBLHAL application.  The Pi can also be used to drive the auxilliar relay outputs.
-
-### GRBLHAL2000 Ecosystem
-<img src="/readme_images/EST_Ecosystem.png" width="600">
 
 ### Attributions
 This project uses components from the very helpful actiBMS library for JLCPCB SMT parts.
