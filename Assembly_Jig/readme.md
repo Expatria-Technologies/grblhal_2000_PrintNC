@@ -1,0 +1,1 @@
+This assembly jig is not compatible with the EST revisions.
