@@ -8,6 +8,9 @@ grblHAL is a no-compromise, high performance, low cost alternative to parallel-p
 
 The GRBLHAL2000 was designed specifically for that machines that we are building in our lab, it is not intended to be everything to everyone.  The GRBL world is surprisingly vibrant and it is very likely that if we are missing a key feature for you, there are other designs out there that will be just what you are looking for.  But this board does include a few features that we couldn't find on other boards, and it reduces the amount of extra wiring in our setups.  In the co-operative spirit of the PrintNC community, and Open Source Hardware, the PNC HAL 2000 will be licensed and free to use by all parties, including commercial parties, under the CERN-OHL-P V2 license.  It is our hope that the community finds the design useful and that it may be carried forward to help advance the PrintNC and broader CNC hobby community.
 
+Since this is not a commercial product, the best place to get a board (other than ordering a stack from the provided CAM files) is from the PrintNC community:
+https://wiki.printnc.info/en/grbl/GRBLHAL2000-marketplace
+
 The most recent A6 revision incorporates community driven updates from the PrintNC Electronic Standardization (EST) Project.  As part of this project, two additional breakout boards have been created for the user controls and limits/probe inputs.  These are simple boards and could easily be milled and hand assembled, but fabrication files for each are available in the CAM_Outputs folder.  In addition, the GRBLHAL2000 is intended to be used with the I2C jog controller or similar peripheral:
 
 https://github.com/Expatria-Technologies/I2C_Jog_Controller
@@ -18,7 +21,7 @@ The key features of the GRBLHAL2000:
 1) Integrated support for 3 wire powered switches such as the inductive type commonly used by the PrintNC community.
 3) Onboard 5V regulator for the Teensy and PI connectors.
 4) Integrated RS485 with automatic direction control.
-5) Support for closed loop stepper motors.
+5) Support for closed loop stepper motors and servos.
 6) Differential interface for Spindle Sync inputs.
 7) Sparkfun QWIIC differential I2C endpoint - extends the range of I2C and creates a robust data link for real-time jogging and control.  Note that due to chip availability issues, this interface has been replaced with pin headers on the A5 revision onwards.  See below for details.
 8) Raspberry Pi GPIO connector allows integration of sender software and extended possibilities for network connectivity.
@@ -27,8 +30,8 @@ In addition, the board offers many of the same features found on other 32 bit GR
 
 1) 5 axes of external step/direction for driving external stepper or servo drivers.
 2) 10V or 5V spindle control.
-3) 3 wire (powered) connections for standard GRBL buttons on brekoput RJ45 connector.
-4) XYZA limit switches and toolsetter on breakout RJ45 connector.
+3) 3 wire (powered) connections for standard GRBL buttons on breakout RJ45 connector.
+4) XYZA limit switches and probe/toolsetter on breakout RJ45 connector.
 5) Flood/mist relay drivers
 6) Additional auxilliary inputs and relay driver outputs.
 
@@ -102,6 +105,8 @@ The relay voltage is selectable between either the 12-24V input voltage, or the 
 <img src="/readme_images/qwiic-logo-registered.jpg" width="100">
 
 On the A5 revision, this interface was revised to remove design dependence on the PCA9615 I2C extender chip.  Instead, pin headers are populated that expose all of the necessary signals to allow a custom I2C extender implementation.  In addition, a reference implementation using the PCA9615 is provided in the QWIIC_CARD folder to see how this might be accomplished and to allow interoperation with existing QWIIC pendants.
+
+Please note that at least on Expatria designed pendants, the I2C interface module is usually included as a breakaway tab as part of the jogger pendant.  It will not be necessary to build the example QWIIC card separately.
 
 This port is intended to allow for external pendant type devices to issue real-time jogging and override controls to the GRBLHAL controller.  It follows the QWIIC interface from Sparkfun, but adds additional signals for the keypad interrupt as well as the emergency stop.  We feel that a robust and wired control is the safest way to interact with a CNC machine in real time.  A simple reference controller implementation is under development, but there are some code examples referenced in the GRBLHAL I2C keypad plugin repository:
 
