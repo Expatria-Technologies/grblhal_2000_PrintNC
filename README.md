@@ -82,6 +82,7 @@ In addition to the B limit, there are two probe input pins on the limit RJ45 bre
 For both of the dual-input signals there is no need to terminate unused ports.
 
 The RJ45 pinout:
+
 <img src="/readme_images/limit_rj45_pinout.jpg" width="150">
 
 ### User Buttons
@@ -90,6 +91,7 @@ The RJ45 pinout:
 Standard GRBL functions are mapped to 4 inputs.  These signals are primarily intended to be used via the user RJ45 connector.  For convenience, the HALT and DOOR signals are also exposed via 3 wire connections on the main PCB.  When multiplexed these signals must be NO logic.  A sample design for a button panel utilizing clear PETG buttons is included in the CAM_Outputs folder.
 
 The RJ45 pinout:
+
 <img src="/readme_images/user_rj45_pinout.jpg" width="150">
 
 ### Flood and Mist relay drivers - Auxillary relay drivers
