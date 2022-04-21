@@ -1,1 +1,1 @@
-This assembly jig is provided for reference only.  It is not compatible with the EST revisions.  PRs are always welcome.
+This assembly jig is provided for reference only.  It is not compatible with the EST revisions.
