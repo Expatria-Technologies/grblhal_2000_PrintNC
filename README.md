@@ -8,7 +8,10 @@ grblHAL is a no-compromise, high performance, low cost alternative to parallel-p
 
 The GRBLHAL2000 was designed specifically for that machines that we are building in our lab, it is not intended to be everything to everyone.  The GRBL world is surprisingly vibrant and it is very likely that if we are missing a key feature for you, there are other designs out there that will be just what you are looking for.  But this board does include a few features that we couldn't find on other boards, and it reduces the amount of extra wiring in our setups.  In the co-operative spirit of the PrintNC community, and Open Source Hardware, the PNC HAL 2000 will be licensed and free to use by all parties, including commercial parties, under the CERN-OHL-P V2 license.  It is our hope that the community finds the design useful and that it may be carried forward to help advance the PrintNC and broader CNC hobby community.
 
-The most recent A6 revision incorporates community driven updates from the PrintNC Electronic Standardization (EST) Project.
+The most recent A6 revision incorporates community driven updates from the PrintNC Electronic Standardization (EST) Project.  As part of this project, two additional breakout boards have been created for the user controls and limits/probe inputs.  These are simple boards and could easily be milled and hand assembled, but fabrication files for each are available in the CAM_Outputs folder.  In addition, the GRBLHAL2000 is intended to be used with the I2C jog controller or similar peripheral:
+
+https://github.com/Expatria-Technologies/I2C_Jog_Controller
+
 
 The key features of the GRBLHAL2000:
 
@@ -111,8 +114,13 @@ This is a standard Raspberry PI GPIO header.  The Pi has the ability to drive th
 
 For communicating with the Teensy, the Pi can act as a standard g-code sender and send data over the connected UART.  The I2C keypad interface is also connected to allow for the potential to develop pi based real-time controls.  Finally, the Pi can assert the user switch controls such as emergency stop.  GRBL auxillary inputs are also routed to the Pi in the event they are unused by the GRBLHAL application.  The Pi can also be used to drive the auxilliar relay outputs.
 
+### GRBLHAL2000 Ecosystem
+<img src="/readme_images/EST_Ecosystem.png" width="600">
+
 ### Attributions
 This project uses components from the very helpful actiBMS library for JLCPCB SMT parts.
 
 https://github.com/actiBMS/JLCSMT_LIB
+
+
 
