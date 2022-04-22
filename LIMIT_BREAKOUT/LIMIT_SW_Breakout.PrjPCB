@@ -112,7 +112,7 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=
+DocumentUniqueId=AASVDFFC
 
 [Document5]
 DocumentPath=..\Layout\PrintNC_GRBLHAL_Breakout.PcbLib
@@ -129,7 +129,7 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=
+DocumentUniqueId=MLNMXIAE
 
 [Document6]
 DocumentPath=LIMIT_SW_Breakout.OutJob

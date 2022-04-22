@@ -386,6 +386,23 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=STPJEKSP
 
+[Document21]
+DocumentPath=Layout\PrintNC_GRBLHAL_Breakout1.PcbLib
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=IIGOFMTY
+
 [ProjectVariant1]
 UniqueID=2FD7A5CA-1890-45CB-96AB-94166B7423FD
 Description=SMT_ONLY
@@ -484,20 +501,20 @@ Path=..\libraries\*.*
 IncludeSubFolders=1
 
 [Parameter1]
-Name=PCBPARTNO
-Value=GRBLHAL_2000_EST
+Name=VarRevNo
+Value=A7
 
 [Parameter2]
-Name=PCBREVNO
-Value=A6
-
-[Parameter3]
 Name=Title
 Value=GRBLHAL_2000_EST
 
+[Parameter3]
+Name=PCBREVNO
+Value=A7
+
 [Parameter4]
-Name=VarRevNo
-Value=A6
+Name=PCBPARTNO
+Value=GRBLHAL_2000_EST
 
 [Configuration1]
 Name=Default Configuration
