@@ -25,13 +25,15 @@ NameNetsHierarchically=1
 PowerPortNamesTakePriority=1
 AutoSheetNumbering=0
 AutoCrossReferences=0
+NewIndexingOfSheetSymbols=0
 PushECOToAnnotationFile=1
 DItemRevisionGUID=
 ReportSuppressedErrorsInMessages=0
 FSMCodingStyle=eFMSDropDownList_OneProcess
 FSMEncodingStyle=eFMSDropDownList_OneHot
 IsProjectConflictPreventionWarningsEnabled=1
-OutputPath=
+IsVirtualBomDocumentRemoved=0
+OutputPath=Project Outputs for USER_SW_Breakout
 LogFolderPath=
 ManagedProjectGUID=
 IncludeDesignInRelease=0
@@ -129,7 +131,7 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=
+DocumentUniqueId=AASVDFFC
 
 [Document6]
 DocumentPath=USER_SW_Breakout.OutJob
@@ -246,20 +248,20 @@ Path=..\libraries\*.*
 IncludeSubFolders=1
 
 [Parameter1]
-Name=PCBPARTNO
-Value=GRBLHAL_2000_EST
+Name=VarRevNo
+Value=A6.1
 
 [Parameter2]
-Name=PCBREVNO
-Value=A6
-
-[Parameter3]
 Name=Title
 Value=GRBLHAL_2000_EST
 
+[Parameter3]
+Name=PCBREVNO
+Value=A6.1
+
 [Parameter4]
-Name=VarRevNo
-Value=A6
+Name=PCBPARTNO
+Value=GRBLHAL_2000_EST
 
 [Configuration1]
 Name=Default Configuration
@@ -428,7 +430,7 @@ TerminationPrefC7=0
 TerminationVCC7=5
 
 [Generic_EDE]
-OutputDir=
+OutputDir=Project Outputs for USER_SW_Breakout
 
 [OutputGroup1]
 Name=Netlist Outputs
@@ -1118,6 +1120,36 @@ OutputName12=Ansys EDB
 OutputDocumentPath12=
 OutputVariantName12=
 OutputDefault12=0
+OutputType13=Ansoft Neutral
+OutputName13=Ansoft Neutral (AutoPCB)
+OutputDocumentPath13=
+OutputVariantName13=
+OutputDefault13=0
+OutputType14=HyperLynx
+OutputName14=HyperLynx (AutoPCB)
+OutputDocumentPath14=
+OutputVariantName14=
+OutputDefault14=0
+OutputType15=Orcad v7 Capture Design
+OutputName15=Orcad v7 Capture Design (AutoSCH)
+OutputDocumentPath15=
+OutputVariantName15=
+OutputDefault15=0
+OutputType16=P-CAD ASCII
+OutputName16=P-CAD ASCII (AutoPCB)
+OutputDocumentPath16=
+OutputVariantName16=
+OutputDefault16=0
+OutputType17=P-CAD V16 Schematic Design
+OutputName17=P-CAD V16 Schematic Design (AutoSCH)
+OutputDocumentPath17=
+OutputVariantName17=
+OutputDefault17=0
+OutputType18=SiSoft
+OutputName18=SiSoft (AutoPCB)
+OutputDocumentPath18=
+OutputVariantName18=
+OutputDefault18=0
 
 [OutputGroup10]
 Name=PostProcess Outputs
@@ -1447,6 +1479,7 @@ Type122=2
 Type123=1
 Type124=1
 Type125=1
+Type126=1
 
 [ERC Connection Matrix]
 L1=NNNNNNNNNNNWNNNWW

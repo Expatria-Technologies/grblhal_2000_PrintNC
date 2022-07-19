@@ -25,12 +25,14 @@ NameNetsHierarchically=1
 PowerPortNamesTakePriority=1
 AutoSheetNumbering=0
 AutoCrossReferences=0
+NewIndexingOfSheetSymbols=0
 PushECOToAnnotationFile=1
 DItemRevisionGUID=
 ReportSuppressedErrorsInMessages=0
 FSMCodingStyle=eFMSDropDownList_OneProcess
 FSMEncodingStyle=eFMSDropDownList_OneHot
 IsProjectConflictPreventionWarningsEnabled=1
+IsVirtualBomDocumentRemoved=0
 OutputPath=
 LogFolderPath=
 ManagedProjectGUID=
@@ -502,7 +504,7 @@ IncludeSubFolders=1
 
 [Parameter1]
 Name=VarRevNo
-Value=A7
+Value=A8
 
 [Parameter2]
 Name=Title
@@ -510,7 +512,7 @@ Value=GRBLHAL_2000_EST
 
 [Parameter3]
 Name=PCBREVNO
-Value=A7
+Value=A8
 
 [Parameter4]
 Name=PCBPARTNO
@@ -1702,6 +1704,7 @@ Type122=2
 Type123=1
 Type124=1
 Type125=1
+Type126=1
 
 [ERC Connection Matrix]
 L1=NNNNNNNNNNNWNNNWW
