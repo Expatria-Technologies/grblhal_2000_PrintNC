@@ -64,6 +64,8 @@ The stepper drivers are designed to be used with IDC connectors that are quick t
 ### Analog Spindle Control
 Traditional GRBL spindle control interface for 0-10V or 0-5V spindle control.  Uses a dual-stage output driver for linear response.  Spindle power supply is selectable between 5V, 12V or external.  Note that when running the board with less than 14v input, it may not be possible to reach the full 10V output level - this is due to the dropout of the 12V LDO.  In this case, use the external spindle power input to connect your 12v and bypass the LDO for the spindle control voltage.
 
+On the bottom side of the Hal2k there is a solder bridge near the spindle section labelled PWM_CUT.  This jumper allows you to have a 12V compliant TTL PWM signal to drive a device like a laser engraver or an ESC.  Open the jumper for PWM output and close the jumper to output a continuous 0-10V analog signal.
+
 
 ### RS485 Spindle Control
 This interface is primarily intended to be used with a Huanyang style VFD for spindle control.  The A and B pins are marked on the bottoms side of the PCB.  Simply connect the appropriate pins to the terminals on the VFD.  The auto-direction sensing circuit is modified from Bryan Varner's project:
