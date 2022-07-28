@@ -33,7 +33,7 @@ FSMCodingStyle=eFMSDropDownList_OneProcess
 FSMEncodingStyle=eFMSDropDownList_OneHot
 IsProjectConflictPreventionWarningsEnabled=1
 IsVirtualBomDocumentRemoved=0
-OutputPath=Project Outputs for PrintNC_GRBLHAL_Breakout
+OutputPath=
 LogFolderPath=
 ManagedProjectGUID=
 IncludeDesignInRelease=0
@@ -503,20 +503,20 @@ Path=..\libraries\*.*
 IncludeSubFolders=1
 
 [Parameter1]
-Name=VarRevNo
-Value=A8
-
-[Parameter2]
-Name=Title
+Name=PCBPARTNO
 Value=GRBLHAL_2000_EST
 
-[Parameter3]
+[Parameter2]
 Name=PCBREVNO
 Value=A8
 
-[Parameter4]
-Name=PCBPARTNO
+[Parameter3]
+Name=Title
 Value=GRBLHAL_2000_EST
+
+[Parameter4]
+Name=VarRevNo
+Value=A8
 
 [Configuration1]
 Name=Default Configuration
@@ -685,7 +685,7 @@ TerminationPrefC7=0
 TerminationVCC7=5
 
 [Generic_EDE]
-OutputDir=Project Outputs for PrintNC_GRBLHAL_Breakout
+OutputDir=
 
 [OutputGroup1]
 Name=Netlist Outputs
