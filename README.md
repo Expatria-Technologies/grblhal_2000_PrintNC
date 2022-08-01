@@ -45,6 +45,10 @@ https://github.com/Expatria-Technologies/iMXRT1062
 ### Teensy 4.1 Module
 The GRBLHAL2000 uses the excellent Teensy4.1 port of GRBLHAL.  Both ethernet and USB-UART solutions can be used for sending g-code.  A UART is also connected to the PI header.
 
+#### Soldering Instructions
+The following pins need to be soldered between the GrblHAL2k and the Teensy: 
+![Solder](/readme_images/TeensySoldering.png)
+
 https://github.com/grblHAL/Plugin_networking/
 
 ### Power Input
