@@ -45,6 +45,10 @@ https://github.com/Expatria-Technologies/iMXRT1062
 ### Teensy 4.1 Module
 The GRBLHAL2000 uses the excellent Teensy4.1 port of GRBLHAL.  Both ethernet and USB-UART solutions can be used for sending g-code.  A UART is also connected to the PI header.
 
+#### Soldering Instructions
+The following pins need to be soldered between the GrblHAL2k and the Teensy: 
+<img src="/readme_images/TeensySoldering.png" width="500">
+
 https://github.com/grblHAL/Plugin_networking/
 
 ### Power Input
@@ -102,7 +106,7 @@ The RJ45 pinout:
 ### Flood and Mist relay drivers - Auxillary relay drivers
 The relay voltage is selectable between either the 12-24V input voltage, or the onboard 5V supply. P9 allows you to select the relay voltage.  If you need to drive more than 250 mA through the auxillary and mist/coolant relay outputs, larger external relays are likley required.
 
-### QWIIC/I2C Real-Time Control Port
+### Real-Time Control Port
 
 <img src="/readme_images/qwiic-logo-registered.jpg" width="100">
 
