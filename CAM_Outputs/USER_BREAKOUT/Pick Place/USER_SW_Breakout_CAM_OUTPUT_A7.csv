@@ -1,30 +1,37 @@
 Altium Designer Pick and Place Locations
-C:\Repo\grblhal_2000_PrintNC\USER_BREAKOUT\Project Outputs for USER_SW_Breakout\USER_SW_Breakout_UPLOAD_GERBERS_A6.1\Pick Place\USER_SW_Breakout_CAM_OUTPUT_A6.1.csv
+C:\Repo\grblhal_2000_PrintNC\USER_BREAKOUT\Project Outputs for USER_SW_Breakout\USER_SW_Breakout_UPLOAD_GERBERS_A7\Pick Place\USER_SW_Breakout_CAM_OUTPUT_A7.csv
 
 ========================================================================================================================
 File Design Information:
 
-Date:       19-07-22
-Time:       14:42
-Revision:   75983908d6b594816e200f1be1812c39a3ac31eb
+Date:       25-07-22
+Time:       22:57
+Revision:   b590559f00567a23eb28d0fb4817a9df8f4250d4
 Variant:    FULL_ASSEMBLY
 Units used: mil
 
 "Designator","Comment","Layer","Footprint","Center-X(mil)","Center-Y(mil)","Rotation","Description"
-"Logo1","Expatria Technologies","BottomOverlay","Expatria-Logo","2452.565","4461.264","90",""
+"Logo?","Expatria Technologies","TopLayer","Expatria-Logo","2453.499","4455.059","90",""
+"FID?","Fiducial","TopLayer","Fiducial10-20","2396.653","4473.425","0","FIDUCIAL NO ASSEMBLY"
+"R3","2KO ±1%","TopLayer","0603_R","3430.118","4605.315","180","Chip resistor"
+"R2","2KO ±1%","TopLayer","0603_R","1988.189","4600.394","180","Chip resistor"
+"R1","2KO ±1%","TopLayer","0603_R","693.898","4601.378","180","Chip resistor"
+"Q3","AO3400A N","TopLayer","SOT-23-3L","3439.961","4255.905","90","MOS(????)"
+"Q2","AO3400A N","TopLayer","SOT-23-3L","1998.032","4255.905","90","MOS(????)"
+"Q1","AO3400A N","TopLayer","SOT-23-3L","703.740","4247.047","90","MOS(????)"
 "J24","RJHSE-5080","TopLayer","FP-RJHSE-5080-MFG","4704.961","4448.819","90","CONN MOD JACK 8P8C R/A UNSHLD"
 "SW3","K2-1102SP-C4SC-04","TopLayer","TECO-FSM4JSMATR_V","1796.260","4448.819","0","Top Actuated 50mA @ 12VDC Round Button SPST 6*6mm Tactile Switches ROHS"
 "SW2","K2-1102SP-C4SC-04","TopLayer","TECO-FSM4JSMATR_V","3238.189","4448.819","0","Top Actuated 50mA @ 12VDC Round Button SPST 6*6mm Tactile Switches ROHS"
 "SW1","K2-1102SP-C4SC-04","TopLayer","TECO-FSM4JSMATR_V","501.969","4448.819","0","Top Actuated 50mA @ 12VDC Round Button SPST 6*6mm Tactile Switches ROHS"
-"R90","2KO ±1%","TopLayer","0603_R","1988.189","4532.638","180","Chip resistor"
+"R90","2KO ±1%","TopLayer","0603_R","1988.189","4531.496","180","Chip resistor"
 "R89","2KO ±1%","TopLayer","0603_R","4062.992","4758.858","180","Chip resistor"
-"R87","2KO ±1%","TopLayer","0603_R","688.976","4527.717","180","Chip resistor"
-"R85","2KO ±1%","TopLayer","0603_R","3430.118","4527.717","180","Chip resistor"
+"R87","2KO ±1%","TopLayer","0603_R","693.898","4527.559","180","Chip resistor"
+"R85","2KO ±1%","TopLayer","0603_R","3430.118","4531.654","0","Chip resistor"
 "J28","WJ15EDGVC-3.5-3P","TopLayer","SL_3_50_180G_03","4158.465","4448.819","90","Header,Male Pin,Covered(4 Sided) 3 1 0.138"(3.50mm) 3 P=3.5mm Pluggable System Terminal Block RoHS"
 "J27","WJ15EDGVC-3.5-3P","TopLayer","SL_3_50_180G_03","1491.142","4448.819","90","Header,Male Pin,Covered(4 Sided) 3 1 0.138"(3.50mm) 3 P=3.5mm Pluggable System Terminal Block RoHS"
 "J26","WJ15EDGVC-3.5-3P","TopLayer","SL_3_50_180G_03","2933.071","4448.819","90","Header,Male Pin,Covered(4 Sided) 3 1 0.138"(3.50mm) 3 P=3.5mm Pluggable System Terminal Block RoHS"
 "J25","WJ15EDGVC-3.5-3P","TopLayer","SL_3_50_180G_03","183.268","4448.819","90","Header,Male Pin,Covered(4 Sided) 3 1 0.138"(3.50mm) 3 P=3.5mm Pluggable System Terminal Block RoHS"
-"D34","0603 Yellow","TopLayer","0603_LED_S1","1983.268","4424.213","90","LED"
+"D34","0603 Yellow","TopLayer","0603_LED_S1","1968.504","4423.228","90","LED"
 "D33","0603 Yellow","TopLayer","0603_LED_S1","4187.992","4758.858","0","LED"
 "D32","0603 Red","TopLayer","0603_LED_S1","679.134","4419.291","90","LED"
-"D31","0603 Green","TopLayer","0603_LED_S1","3430.118","4419.291","90","LED"
+"D31","0603 Green","TopLayer","0603_LED_S1","3415.354","4424.213","90","LED"
