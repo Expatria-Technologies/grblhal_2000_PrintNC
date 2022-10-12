@@ -63,7 +63,7 @@ GRBLHAL2000 has reverse polarity as well as over-current protection beyond 1A.  
 ### Stepper Drivers
 <img src="/readme_images/Stepper_Pins.jpg" width="300">
 
-The stepper drivers are designed to be used with IDC connectors that are quick to assemble.  Unfortuantely you will need to ensure that at the external driver the high and low signal pairs are connected correctly as there is no standard pinout on these drivers.  The 8 pin conneciton allows you to run a high and low pair for every signal to ensure the best possible signal integrity.  If desired, L2 and L3 can be swapped so that the steppers can be driven with 12V.
+The stepper drivers are designed to be used with IDC connectors that are quick to assemble.  Unfortuantely you will need to ensure that at the external driver the high and low signal pairs are connected correctly as there is no standard pinout on these drivers.  The 8 pin conneciton allows you to run a high and low pair for every signal to ensure the best possible signal integrity.  The board uses active low sinking outputs on the minus signal pins.  By default a common 5V is supplied to the plus pins.  If desired, L2 and L3 can be swapped so that the steppers can be driven with 12V.
 
 ### Analog Spindle Control
 Traditional GRBL spindle control interface for 0-10V or 0-5V spindle control.  Uses a dual-stage output driver for linear response.  Spindle power supply is selectable between 5V, 12V or external.  Note that when running the board with less than 14v input, it may not be possible to reach the full 10V output level - this is due to the dropout of the 12V LDO.  In this case, use the external spindle power input to connect your 12v and bypass the LDO for the spindle control voltage.
