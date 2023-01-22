@@ -137,6 +137,10 @@ Complete GRBLHAL2000 ecosystem with Jogger, breakouts and motion controller.
 
 <img src="/readme_images/EST_Ecosystem.png" width="500">
 
+### Accessories
+
+Some 3D printed accessories are avilable in [Mods & Accessories](https://github.com/Expatria-Technologies/Mods-Accessories/), including a mounting plate and enclosures/mounts for the limit and button breakouts.
+
 ### Attributions
 This project uses components from the very helpful actiBMS library for JLCPCB SMT parts.
 
