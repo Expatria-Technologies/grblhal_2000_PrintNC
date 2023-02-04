@@ -130,7 +130,7 @@ https://www.sparkfun.com/qwiic
 This port allows a differential connection to an external module for a robust GRBLHAL lathe implementation.  A reference encoder design is under development.  In addition solder jumper options are present to allow this connector to provide a quadrature encoder signal to the Teensy 4.1 QEI pins for future development.
 
 ### AUX Relay Port
-Four axilliary relay outputs are exposed.  These have a maximum combined drive current of 500 mA.  The relay voltage can be selected via a 3 pin jumper between the external voltage input (12-28V) and the onboard 5V supply.
+Four axilliary relay outputs are exposed.  These have a maximum combined drive current of 500 mA.  The relay voltage can be selected via a 3 pin jumper between the external voltage input (12-28V) and the onboard 5V supply.  The 5V option cannot drive more than 20 mA per pin and is only used for TTL signalling applications - it should never be used to drive inductive loads.
 
 ### Raspberry PI expansion header
 
