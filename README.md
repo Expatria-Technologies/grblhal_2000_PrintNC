@@ -10,7 +10,10 @@ https://expatria.myshopify.com/products/flexi-hal
 
 Please consider buying a board to support our open-source designs. 
 
-Precompiled firmware for this controller is available here: https://github.com/Expatria-Technologies/iMXRT1062/releases
+Precompiled firmware for this controller is available here: 
+https://github.com/Expatria-Technologies/iMXRT1062/releases
+A web compiler is available here: 
+http://svn.io-engineering.com:8080/
 
 grblHAL is a no-compromise, high performance, low cost alternative to parallel-port-based motion control for CNC milling, and the GRBLHAL2000 breakout board is a highly integrated, no compromise host platform for this awesome software.  Utilizing the high-performance PJRC Teensy 4.1 module, this board is designed to be a community driven project for the PrintNC, but useful for driving any type of CNC machine that uses external stepper drivers.
 
