@@ -12,6 +12,7 @@ Please consider buying a board to support our open-source designs.
 
 Precompiled firmware for this controller is available here: 
 https://github.com/Expatria-Technologies/iMXRT1062/releases
+
 A web compiler is available here: 
 http://svn.io-engineering.com:8080/
 
