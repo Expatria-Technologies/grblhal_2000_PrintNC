@@ -42,7 +42,7 @@ In addition, the board offers many of the same features found on other 32 bit GR
 6) Additional auxilliary inputs and relay driver outputs.
 
 Optimized GRBLHAL driver is located here:
-https://github.com/Expatria-Technologies/iMXRT1062
+https://github.com/Expatria-Technologies/iMXRT1062/releases
 
 ## GRBLHAL2000 Overview
 
